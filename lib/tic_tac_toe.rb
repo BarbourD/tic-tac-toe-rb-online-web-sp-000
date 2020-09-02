@@ -69,7 +69,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.all?{|token| token == "X" || token == "O"}
+  board.all? {|token| token == "X" || token == "O"}
 end
 
 def draw?(board)
@@ -87,13 +87,13 @@ def winner(board)
 end
 
 def play(board)
-until over?(board) 
-turn(board)
-end
-if won?(board)
-winner(board) == "X" || winner(board) == "O"
-puts "Congratulations #{winner(board)}!"
-elsif draw?(board)
-puts "Cat's Game!"
-end
-end
+until over?(board) #until over?(board) 
+#turn(board)
+#end
+#if won?(board)
+#winner(board) == "X" || winner(board) == "O"
+#puts "Congratulations #{winner(board)}!"
+#elsif draw?(board)
+#puts "Cat's Game!"
+#end
+#end
