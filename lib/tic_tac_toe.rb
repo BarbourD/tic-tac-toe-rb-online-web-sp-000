@@ -88,6 +88,7 @@ end
 
 def play(board)
 until over?(board) do #until over?(board)
+true
 turn(board) #turn(board)
 end #end
 #if won?(board)
